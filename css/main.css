@@ -1,0 +1,508 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;  /*! main font color */
+    font-size: 1em; /*! main font size */
+    line-height: 1.4; /*! main text lineheight */
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+.footer-content {
+    width: 60%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+
+.footer-content h2 {
+    text-transform: none;
+}
+
+/* ===================
+    ALL: Color Theme
+   =================== */
+
+.header-container {
+/*    border-bottom: 20px solid #fff;*/
+}
+
+.footer-container {
+/*    border-top: 20px solid #fff;*/
+}
+
+.header-container,
+.footer-container {
+    background: #fff;
+}
+
+.title {
+    color: #222;
+
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}   
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer ul {
+   columns: 2;
+   list-style-type: none;
+   margin: 0; 
+   padding: 0;
+   width: 140%;
+}
+
+nav a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    font-weight: normal;
+    letter-spacing: 2px;
+    color: #222;
+    background: #fff;
+}
+
+nav a:hover,
+nav a:visited {
+    color: #222;
+}
+
+nav a:hover {
+    color: #222;
+}
+
+nav a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -10px;
+  left: 0;
+  background-color: #222;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.1s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+nav a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+nav a.active {
+   font-weight: bold;
+}
+
+h1.title a {
+    text-decoration: none;
+    color: #222;
+}
+
+h1.title a:hover {
+    color: #b2b2b2;;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    padding: 20px 0 30px 0;
+}
+
+.footer-container footer {
+    color: #222;
+    padding: 20px 0;
+    margin-bottom: 50px;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ==========================================================================
+   Custom styles
+   ========================================================================== */
+.img-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.hvrbox-text a,
+.hvrbox-text a:visited{
+    color: #fff;
+    text-decoration: none;
+}
+
+.fill-box,
+.home-img {
+    max-width: 25%;
+    min-height: 200px;
+    background-color: #F0F0F0;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.fill-box {
+    padding: 0 40px;
+}
+
+.fill-box-text {
+    font-size: 20px;
+    text-align: center;
+}
+
+.gray-text {
+    color: #3F3F3F;
+}
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media only screen and (max-width: 766px) {
+    
+    h1.title {
+        margin-top: 35px;
+    }
+
+    nav {
+        justify-content: flex-start;
+    }
+
+    nav ul {
+       flex-wrap: wrap; 
+    }
+
+    nav li {
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    nav a:before,
+    nav a:hover:before {
+        visibility: hidden;
+    }
+
+    .footer-content {
+         width: 100%;
+    }
+    
+    footer ul {
+        columns: 1;
+        width: 100%;
+    }
+
+    div.hvrbox {
+        margin: 10px 0;
+        max-height: 300px;
+    }
+
+    .home-img {
+        max-width: 100%;
+        min-height: 200px;
+    }
+
+    .fill-box {
+        padding: 15px 90px;
+        margin: 10px 0;
+        max-width: 100%;
+        min-height: 200px;
+    }
+
+    h1.title a {
+        color: #b2b2b2;
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 984px) {
+    div .hvrbox {
+        max-width: 48%;
+        margin: 10px 0;
+    }
+
+    .fill-box {
+        margin: 10px 0;
+        max-width: 36.6%;
+    }
+}
+
+@media only screen and (min-width: 985px) {
+    div .hvrbox {
+        max-width: 32%;
+        margin: 10px 0;
+    }
+
+    .fill-box {
+        margin: 10px 0;
+        max-width: 24%;
+
+    }
+    .home-img {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+    nav a {
+        float: left;
+        margin: 0 30px 0 0;
+    }
+
+    nav li:first-child a {
+        margin-left: 0;
+    }
+
+    nav li:last-child a {
+        margin-right: 0;
+    }
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+    nav ul li {
+        display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+/* ============
+    WIDE: Menu
+   ============ */
+
+    .title {
+        float: left;
+        padding-top: 40px;
+    }
+
+    nav {
+        float: right;
+        padding-top: 65px;
+    }
+
+/* ============
+    WIDE: Main
+   ============ */
+
+    .main article {
+        float: left;
+        width: 60%;
+    }
+
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited,
+    a:hover {
+        /*text-decoration: none;*/
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
