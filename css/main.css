@@ -213,7 +213,7 @@ h1.title a:hover {
 .home-img {
     max-width: 25%;
     min-height: 200px;
-    background-color: #F0F0F0;
+    background-color: #F9F9F9;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -283,10 +283,15 @@ h1.title a:hover {
     }
 
     .fill-box {
-        padding: 15px 90px;
+        padding: 15px 40px;
         margin: 10px 0;
         max-width: 100%;
         min-height: 200px;
+    }
+
+    .fill-box-text {
+        font-size: 25px;
+        line-height: 1.5;
     }
 
     h1.title a {
