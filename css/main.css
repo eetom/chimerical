@@ -69,6 +69,11 @@ body {
 
 .footer-content h2 {
     text-transform: none;
+    font-size: 1.5rem;
+}
+
+.footer-content li {
+  font-size: 0.9rem;
 }
 
 /* ===================
@@ -100,7 +105,7 @@ body {
 nav {
     display: flex;
     justify-content: flex-end;
-}   
+}
 
 nav ul {
     margin: 0;
@@ -113,7 +118,7 @@ nav ul {
 footer ul {
    columns: 2;
    list-style-type: none;
-   margin: 0; 
+   margin: 0;
    padding: 0;
    width: 140%;
 }
@@ -225,7 +230,7 @@ h1.title a:hover {
 
 .fill-box-text {
     font-size: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 .gray-text {
@@ -250,7 +255,7 @@ h1.title a:hover {
     }
 
     nav ul {
-       flex-wrap: wrap; 
+       flex-wrap: wrap;
     }
 
     nav li {
