@@ -62,8 +62,6 @@ body {
 
 .footer-content {
     width: 60%;
-    text-transform: uppercase;
-    letter-spacing: 2px;
     font-weight: normal;
 }
 
@@ -73,8 +71,18 @@ body {
 }
 
 .footer-content li {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
+
+i {
+  font-size: 18px;
+  padding: 10px 3px;
+}
+
+li a:first-child i {
+  padding-left: 0;
+}
+
 
 /* ===================
     ALL: Color Theme
@@ -115,8 +123,8 @@ nav ul {
     justify-content: flex-end;
 }
 
-footer ul {
-   columns: 2;
+footer ul,
+header ul {
    list-style-type: none;
    margin: 0;
    padding: 0;
@@ -210,7 +218,9 @@ h1.title a:hover {
 
 .hvrbox-text a,
 .hvrbox-text a:visited{
-    color: #fff;
+    color: #333;
+    font-weight: normal;
+    font-size: 20px;
     text-decoration: none;
 }
 
@@ -272,7 +282,8 @@ h1.title a:hover {
          width: 100%;
     }
     
-    footer ul {
+    footer ul,
+    header ul {
         columns: 1;
         width: 100%;
     }
