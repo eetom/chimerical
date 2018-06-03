@@ -16,15 +16,6 @@ html {
     text-shadow: none;
 }
 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
 audio,
 canvas,
 iframe,
@@ -56,8 +47,8 @@ body {
 }
 
 .wrapper {
-    width: 90%;
-    margin: 0 5%;
+    width: 95%;
+    margin: 0 2.5%;
 }
 
 .footer-content {
@@ -74,8 +65,9 @@ body {
 }
 
 i {
-  font-size: 18px;
-  padding: 10px 3px;
+  font-size: 1.8rem;
+  padding: 10px 5px;
+  color: #333;
 }
 
 li a:first-child i {
@@ -86,14 +78,6 @@ li a:first-child i {
 /* ===================
     ALL: Color Theme
    =================== */
-
-.header-container {
-/*    border-bottom: 20px solid #fff;*/
-}
-
-.footer-container {
-/*    border-top: 20px solid #fff;*/
-}
 
 .header-container,
 .footer-container {
@@ -215,7 +199,7 @@ h1.title a:hover {
 .img-section {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 0 50px 0;
+    margin: 0 0 5rem 0;
     justify-content: space-between;
 }
 
@@ -247,6 +231,14 @@ h1.title a:hover {
   color: #3F3F3F;
 }
 
+.blog ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.blog ul li {
+  padding-bottom: 10px;
+}
 
 
 
