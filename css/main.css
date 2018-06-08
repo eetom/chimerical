@@ -68,6 +68,7 @@ i {
   font-size: 1.8rem;
   padding: 10px 5px;
   color: #333;
+  margin-top: 1rem;
 }
 
 li a:first-child i {
@@ -271,7 +272,32 @@ a.blogback {
 }
 
 .writing-rule {
-  margin: 2rem;
+  margin: 2rem 0;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #eeeeee;
+}
+
+.table-no {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.table-yes {
+  background-color: #1abc9c;
+  color: white;
+}
+
+.table-maybe {
+  background-color: #f1c40f;
+  color: white;
 }
 
 /* ==========================================================================
