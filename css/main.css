@@ -172,6 +172,10 @@ h1.title a:hover {
     color: #b2b2b2;;
 }
 
+.gray-text {
+  color: #222;
+}
+
 /* ==============
     MOBILE: Main
    ============== */
@@ -217,7 +221,7 @@ h1.title a:hover {
 }
 
 .home-img {
-    /*max-width: 25%;*/
+    width: 100%;
     min-height: 200px;
     background-color: #F9F9F9;
     display: flex;
@@ -231,10 +235,6 @@ h1.title a:hover {
     display: flex;
     align-items: center;
     overflow: hidden;
-}
-
-.gray-text {
-    color: #3F3F3F;
 }
 
 .subtitle {
@@ -372,6 +372,11 @@ tr:nth-child(even) {
     div.img-sub {
         margin: 10px 0;
         max-height: 300px;
+        width: 100%;
+    }
+
+    .img-desc {
+      margin-bottom: 1em;
     }
 
     .home-img {
@@ -386,8 +391,8 @@ tr:nth-child(even) {
 
 @media only screen and (min-width: 767px) and (max-width: 984px) {
     div .img-sub {
-
         margin: 10px 0;
+        width: 48%;
     }
 }
 
